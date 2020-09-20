@@ -3,11 +3,12 @@ import React from 'react';
 import Header from '../layouts/Header';
 import Filter from '../../images/filter.png';
 import TileView from './TileView';
+import ListView from './ListView';
 
 const Activists = () => {
   return (
     <div>
-      <div className="logo-name">Activist Hub</div>
+      <Header />
       <div className="activists-container">
         <div className="search-add">
           <div>
@@ -21,7 +22,8 @@ const Activists = () => {
         <div className="filter">
           <img src={Filter} alt="fileter" />
         </div>
-        <TileView />
+        {/* <TileView /> */}
+        <ListView />
       </div>
     </div>
   );

@@ -1,39 +1,3 @@
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 * {
   font-family: 'Spartan', sans-serif;
 }
@@ -46,7 +10,6 @@
 
 .logo {
   background-image: url('./images/teemu-paananen-rd5uNIUJCF0-unsplash 1.jpg');
-  font-weight: bold;
   font-size: 32px;
   line-height: 40px;
   letter-spacing: 0.05em;
@@ -57,11 +20,7 @@
 }
 
 .cta {
-  margin: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-left: 16%;
-  margin-right: 14%;
+  margin: auto 14% auto 16%;
 }
 
 .cta button {
@@ -97,9 +56,6 @@
   height: 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* display: flex; */
-  /* padding-top: 1px; */
-  /* padding-bottom: 1px; */
 }
 .add {
   float: right;
@@ -108,8 +64,7 @@
 .search-add input {
   height: 3rem;
   width: 50%;
-  /* padding-top: 1rem; */
-  /* padding-bottom: 2rem; */
+  margin-right: 2rem;
 }
 .search-add button {
   height: 2rem;
@@ -119,22 +74,16 @@
   border-radius: 2px;
   border: #6a0000;
   color: #fff;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
   font-weight: bolder;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding: 1rem 1.5rem 2rem;
 }
 .add {
   background: #fff;
   border-radius: 2px;
   border: 2px solid #6a0000;
   color: #6a0000;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
   font-weight: bolder;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
+  padding: 1rem 1.5rem 2rem;
 }
 
 .filter {
@@ -149,10 +98,7 @@
 .activist {
   border: 1px solid;
   border-radius: 3px;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 3rem 2rem;
   background: #fff;
 }
 .image-clap {
@@ -163,11 +109,53 @@
 .clap-count {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: auto;
-  margin-left: auto;
-  margin-left: 2rem;
+  margin: auto auto auto 2rem;
 }
 .activist-image {
-  border-radius: 50px;
-  width: 78%;
+  border-radius: 50%;
+  width: 88%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  width: 8%;
+  line-height: 22px;
+  color: #121212;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  background: red;
+}
+th {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #a1a4b8;
+}
+
+td:nth-child(odd) {
+  width: 0rem;
+}
+.list-activist-image {
+  border-radius: 50%;
+  width: 58%;
+}
+.list-activist-name {
+  width: 50%;
+  padding-left: 1rem;
+
+  line-height: 22px;
+  color: #121212;
+}
+.list-activist-description {
+  padding-left: 1rem;
 }
