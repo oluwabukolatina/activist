@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -32,7 +28,52 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+* {
+  font-family: 'Spartan', sans-serif;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+.logo {
+  background-image: url('./images/teemu-paananen-rd5uNIUJCF0-unsplash 1.jpg');
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  padding-top: 4%;
+  padding-left: 10%;
+  font-weight: bolder;
+}
+
+.cta {
+  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-left: 16%;
+  margin-right: 14%;
+}
+
+.cta button {
+  width: 27%;
+  background: #6A0000;
+  border-radius: 2px;
+  color: #fff;
+  border: #6a0000;
+  padding: 3%;
+  font-weight: bolder;
+}
+
+.cta p {
+  font-weight: bold;
 }
