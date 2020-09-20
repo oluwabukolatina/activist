@@ -50,7 +50,7 @@
   font-size: 32px;
   line-height: 40px;
   letter-spacing: 0.05em;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-top: 4%;
   padding-left: 10%;
   font-weight: bolder;
@@ -66,7 +66,7 @@
 
 .cta button {
   width: 27%;
-  background: #6A0000;
+  background: #6a0000;
   border-radius: 2px;
   color: #fff;
   border: #6a0000;
@@ -76,4 +76,98 @@
 
 .cta p {
   font-weight: bold;
+}
+.logo-name {
+  font-style: normal;
+  color: #6a0000;
+  margin-left: 5rem;
+  margin-top: 1.8rem;
+  font-size: 35px;
+  font-weight: bolder;
+  background: #ffffff;
+  border-bottom: 1px solid;
+}
+.activists-container {
+  background: #fbfbfb;
+  margin-left: 5rem;
+  margin-top: 3rem;
+  margin-right: 5rem;
+}
+.search-add {
+  height: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* display: flex; */
+  /* padding-top: 1px; */
+  /* padding-bottom: 1px; */
+}
+.add {
+  float: right;
+}
+
+.search-add input {
+  height: 3rem;
+  width: 50%;
+  /* padding-top: 1rem; */
+  /* padding-bottom: 2rem; */
+}
+.search-add button {
+  height: 2rem;
+}
+.activist-search {
+  background: #6a0000;
+  border-radius: 2px;
+  border: #6a0000;
+  color: #fff;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-weight: bolder;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+.add {
+  background: #fff;
+  border-radius: 2px;
+  border: 2px solid #6a0000;
+  color: #6a0000;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-weight: bolder;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.filter {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.activists {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2%;
+}
+.activist {
+  border: 1px solid;
+  border-radius: 3px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background: #fff;
+}
+.image-clap {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 3rem;
+}
+.clap-count {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  margin-left: auto;
+  margin-left: 2rem;
+}
+.activist-image {
+  border-radius: 50px;
+  width: 78%;
 }
