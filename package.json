@@ -37,12 +37,12 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && npm run flow"
+      "pre-commit": "lint-staged && npm run lint"
     }
   },
-  "precommit": "NODE_ENV=production lint-staged",
+  "precommit": "lint-staged",
   "lint-staged": {
-    "src/**/*.{js,jsx,tsx}": [
+    "src/**/*.{js}": [
       "eslint --fix",
       "git add"
     ]
