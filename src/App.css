@@ -62,10 +62,6 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.add {
-  float: right;
-}
-
 .search-add input {
   height: 3rem;
   width: 50%;
@@ -88,10 +84,12 @@
 .add {
   background: #fff;
   border-radius: 2px;
-  border: 2px solid #6a0000;
+  border: 3px solid #6a0000;
   color: #6a0000;
   font-weight: bolder;
   padding: 1rem 1.5rem 2rem;
+
+  float: right;
 }
 
 .filter {
@@ -142,9 +140,7 @@ td {
   line-height: 22px;
   color: #121212;
 
-
   padding: 1rem 20px 5px;
-
 }
 
 th {
@@ -180,6 +176,29 @@ td:nth-child(odd) {
 .link {
   color: #fff;
   text-decoration: none;
+}
+
+.add-new {
+  background: #6a0000;
+  color: #fff;
+  padding: 1rem;
+  margin: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border: #6a0000;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.footer {
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.add-title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 27px;
+  line-height: 26px;
+  color: #121212;
 }
 
 /* tr {
