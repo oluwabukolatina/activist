@@ -1,7 +1,6 @@
 /* eslint-disable react/button-has-type */
 import React from 'react';
 import Header from '../layouts/Header';
-import Filter from '../../images/filter.png';
 import TileView from './TileView';
 import ListView from './ListView';
 
@@ -19,9 +18,7 @@ const Activists = () => {
             <button className="add">Add New Activist</button>
           </div>
         </div>
-        <div className="filter">
-          <img src={Filter} alt="fileter" />
-        </div>
+
         {/* <TileView /> */}
         <ListView />
       </div>

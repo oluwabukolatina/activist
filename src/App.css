@@ -31,11 +31,13 @@
   border: #6a0000;
   padding: 3%;
   font-weight: bolder;
+  cursor: pointer;
 }
 
 .cta p {
   font-weight: bold;
 }
+
 .logo-name {
   font-style: normal;
   color: #6a0000;
@@ -46,17 +48,20 @@
   background: #ffffff;
   border-bottom: 1px solid;
 }
+
 .activists-container {
   background: #fbfbfb;
   margin-left: 5rem;
   margin-top: 3rem;
   margin-right: 5rem;
 }
+
 .search-add {
   height: 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
 .add {
   float: right;
 }
@@ -66,9 +71,11 @@
   width: 50%;
   margin-right: 2rem;
 }
+
 .search-add button {
   height: 2rem;
 }
+
 .activist-search {
   background: #6a0000;
   border-radius: 2px;
@@ -77,6 +84,7 @@
   font-weight: bolder;
   padding: 1rem 1.5rem 2rem;
 }
+
 .add {
   background: #fff;
   border-radius: 2px;
@@ -90,27 +98,32 @@
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
+
 .activists {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2%;
 }
+
 .activist {
   border: 1px solid;
   border-radius: 3px;
   padding: 3rem 2rem;
   background: #fff;
 }
+
 .image-clap {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-gap: 3rem;
 }
+
 .clap-count {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: auto auto auto 2rem;
 }
+
 .activist-image {
   border-radius: 50%;
   width: 88%;
@@ -128,12 +141,13 @@ td {
   width: 8%;
   line-height: 22px;
   color: #121212;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  background: red;
+
+
+  padding: 1rem 20px 5px;
+
 }
+
 th {
-  padding: 8px;
   text-align: left;
   border-bottom: 1px solid #eee;
   border-top: 1px solid #eee;
@@ -145,10 +159,12 @@ th {
 td:nth-child(odd) {
   width: 0rem;
 }
+
 .list-activist-image {
   border-radius: 50%;
   width: 58%;
 }
+
 .list-activist-name {
   width: 50%;
   padding-left: 1rem;
@@ -156,6 +172,18 @@ td:nth-child(odd) {
   line-height: 22px;
   color: #121212;
 }
+
 .list-activist-description {
   padding-left: 1rem;
 }
+
+.link {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* tr {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+} */
