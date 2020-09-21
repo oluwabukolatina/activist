@@ -1,7 +1,3 @@
-https://www.figma.com/proto/x9I77RhwyYdcjvhjoT4zf8/ActivistHub?node-id=3%3A0&scaling=min-zoom
-
-https://www.figma.com/file/x9I77RhwyYdcjvhjoT4zf8/ActivistHub?node-id=0%3A1
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
