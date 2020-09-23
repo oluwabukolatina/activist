@@ -44,15 +44,15 @@ const Activists = () => {
 
   const displayData = tile ? (
     <>
-      <div onClick={() => display()} className="filter">
-        <img src={Filter} alt="fileter for tile" />
+      <div className="filter">
+        <img onClick={() => display()} src={Filter} alt="fileter for tile" />
       </div>
       <TileView activists={activists} />
     </>
   ) : (
     <>
-      <div onClick={() => display()} className="filter">
-        <img src={List} alt="list" />
+      <div className="filter">
+        <img onClick={() => display()} src={List} alt="list" />
       </div>
       <ListView activists={activists} />
     </>
