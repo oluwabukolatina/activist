@@ -131,18 +131,6 @@ input[type='text'].search::-webkit-input-placeholder {
   cursor: pointer;
 }
 
-/* .activists {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2%;
-} */
-
-/* .activist {
-  border: 1px solid;
-  border-radius: 3px;
-  padding: 3rem 2rem;
-  background: #fff;
-} */
 .activists {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -168,7 +156,7 @@ input[type='text'].search::-webkit-input-placeholder {
   padding: 1rem 2rem;
   background: #fff;
   margin-bottom: 7%;
-  height: 393px;
+  height: 353px;
 }
 
 .activist h5 {
@@ -242,8 +230,9 @@ th {
   font-size: 13px;
 }
 
-td:nth-child(odd) {
-  width: 0rem;
+.list-activist {
+  /* text-align: center; */
+  padding-left: 3rem;
 }
 
 .list-activist-image {
@@ -253,7 +242,7 @@ td:nth-child(odd) {
 }
 
 .list-activist-name {
-  width: 50%;
+  width: 21%;
   padding-left: 0rem;
   font-size: 14px;
   line-height: 22px;
@@ -264,6 +253,7 @@ td:nth-child(odd) {
 .list-activist-description {
   padding-left: 0rem;
   font-weight: 700;
+  width: 29%;
 }
 
 .link {
