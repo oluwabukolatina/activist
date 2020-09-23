@@ -8,7 +8,6 @@ const useActivists = () => {
     async function getActivists() {
       try {
         const response = await axios.get(`${GET_ACTIVISTS_URL}`);
-        console.log(response.data);
         if (response.data) {
           setActivists(response.data);
         }

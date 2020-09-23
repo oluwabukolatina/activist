@@ -1,7 +1,8 @@
+/* eslint-disable react/require-default-props */
 import React from 'react';
 import moment from 'moment';
+import PropTypes from 'prop-types';
 import Clap from '../../images/clap-hand.png';
-import Filter from '../../images/filter.png';
 
 const TileView = ({ activists }) => {
   console.log(activists);
@@ -36,13 +37,9 @@ const TileView = ({ activists }) => {
           );
         })
       : 'no activists';
-  return (
-    <>
-      <div className="filter">
-        <img src={Filter} alt="fileter" />
-      </div>
-      <div className="activists">{displayActivists}</div>
-    </>
-  );
+  return <div className="activists">{displayActivists}</div>;
+};
+TileView.propTypes = {
+  activists: PropTypes.shape(),
 };
 export default TileView;

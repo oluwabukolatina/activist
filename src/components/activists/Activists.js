@@ -9,17 +9,47 @@ import ListView from './ListView';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SharedButton from '../shared/SharedButton';
 import useActivists from '../../hooks/useActivists';
+import Filter from '../../images/filter.png';
+import List from '../../images/List.png';
 
 const Activists = () => {
   const { activists } = useActivists();
-  console.log(activists);
   const [show, setShow] = useState(false);
   const [open, setOpen] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const openModal = () => setOpen(!open);
+  const [tile, showTile] = useState(true);
+  const [list, showList] = useState(false);
+  const handleShowTile = () => {
+    showTile(!tile);
+    showList(!list);
+  };
+  const handleShowList = () => {
+    showTile(!tile);
+    showList(!list);
+  };
+  const display = () => {
+    showTile(!tile);
+    showList(!list);
+  };
 
+  const displayData = tile ? (
+    <>
+      <div onClick={() => display()} className="filter">
+        <img src={Filter} alt="fileter for tile" />
+      </div>
+      <TileView activists={activists} />
+    </>
+  ) : (
+    <>
+      <div onClick={() => display()} className="filter">
+        <img src={List} alt="list" />
+      </div>
+      <ListView />
+    </>
+  );
   return (
     <>
       <Header />
@@ -128,9 +158,7 @@ const Activists = () => {
           </Modal.Footer>
           {/* <SharedButton text="Add Activist" classname="add-new" /> */}
         </Modal>
-
-        <TileView activists={activists} />
-        {/* <ListView /> */}
+        <>{displayData}</>
       </div>
     </>
   );
