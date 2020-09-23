@@ -15,7 +15,11 @@ const TileView = () => {
               <div className="image-clap py-3">
                 <img
                   className="activist-image"
-                  src={activist.imgUrl}
+                  src={
+                    activist.imgUrl
+                      ? activist.imgUrl
+                      : 'https://via.placeholder.com/150'
+                  }
                   alt="activist"
                 />
                 <div className="clap-count">

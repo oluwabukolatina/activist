@@ -12,7 +12,6 @@ import Profile from '../../images/photo.png';
 
 const ActivistsBody = () => {
   const {
-    activists,
     onChange,
     newActivist,
     createActivist,
