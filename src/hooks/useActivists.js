@@ -18,6 +18,7 @@ const useActivists = () => {
   const [{ activists }, dispatch] = useReducer(activistReducer, {
     activists: [],
   });
+  const [clap, setClap] = useState(2);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -57,6 +58,9 @@ const useActivists = () => {
     }
     getActivists();
   }, []);
+  const increaseClap = () => {
+    setClap(clap + 1);
+  };
   return {
     activists,
     onChange,
@@ -65,6 +69,8 @@ const useActivists = () => {
     handleShow,
     handleClose,
     show,
+    clap,
+    increaseClap,
   };
 };
 export default useActivists;

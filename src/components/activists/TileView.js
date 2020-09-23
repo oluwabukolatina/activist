@@ -6,7 +6,7 @@ import Clap from '../../images/clap-hand.png';
 import AppContext from '../../context/AppContext';
 
 const TileView = () => {
-  const { activists } = useContext(AppContext);
+  const { activists, clap, increaseClap } = useContext(AppContext);
   const displayActivists =
     activists && activists.length
       ? activists.map((activist) => {
@@ -24,7 +24,9 @@ const TileView = () => {
                 />
                 <div className="clap-count">
                   <img src={Clap} alt="clap-hand" />
-                  <p>3.6k</p>
+                  <p> 
+{' '}
+{clap}k</p>
                 </div>
               </div>
               <h3>{activist.person}</h3>

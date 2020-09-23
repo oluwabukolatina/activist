@@ -16,6 +16,7 @@ const Activists = () => {
     handleShow,
     handleClose,
     show,
+    clap, increaseClap
   } = useActivists();
 
   return (
@@ -30,6 +31,7 @@ const Activists = () => {
           handleShow,
           handleClose,
           show,
+          clap, increaseClap
         }}
       >
         <ActivistsBody />
