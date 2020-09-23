@@ -1,26 +1,32 @@
 /* eslint-disable react/require-default-props */
-import React from 'react';
+import React, { useContext } from 'react';
 import moment from 'moment';
 import PropTypes from 'prop-types';
 import Clap from '../../images/clap-hand.png';
+import AppContext from '../../context/AppContext';
 
-const TileView = ({ activists }) => {
-  console.log(activists);
-
+const TileView = () => {
+  const { activists, clap, increaseClap } = useContext(AppContext);
   const displayActivists =
     activists && activists.length
       ? activists.map((activist) => {
           return (
-            <div className="activist">
+            <div key={activist.id} className="activist">
               <div className="image-clap py-3">
                 <img
                   className="activist-image"
-                  src={activist.imgUrl}
+                  src={
+                    activist.imgUrl
+                      ? activist.imgUrl
+                      : 'https://via.placeholder.com/150'
+                  }
                   alt="activist"
                 />
                 <div className="clap-count">
                   <img src={Clap} alt="clap-hand" />
-                  <p>3.6k</p>
+                  <p> 
+{' '}
+{clap}k</p>
                 </div>
               </div>
               <h3>{activist.person}</h3>

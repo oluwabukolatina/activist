@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useReducer } from 'react';
 import axios from 'axios';
-import moment from 'moment';
+import { activistReducer } from '../reducer/activistReducer';
 
 const ACTIVISTS_URL = `https://example-data.draftbit.com/activists?_limit=10`;
 const useActivists = () => {
@@ -14,8 +14,11 @@ const useActivists = () => {
     person: '',
   };
   const [newActivist, setNewActivist] = useState(initialState);
-  const [activists, setActivists] = useState([]);
   const [show, setShow] = useState(false);
+  const [{ activists }, dispatch] = useReducer(activistReducer, {
+    activists: [],
+  });
+  const [clap, setClap] = useState(2);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -24,16 +27,18 @@ const useActivists = () => {
     setNewActivist({ ...newActivist, [name]: value });
   };
   const createActivist = async () => {
-    console.log(newActivist);
     try {
       const response = await axios.post(`${ACTIVISTS_URL}`, newActivist);
-      console.log(response.data);
       if (response.data.id) {
         setNewActivist(initialState);
 
         setShow(!show);
-        setActivists([...activists, response.data]);
-        console.log([...activists, response.data]);
+
+        dispatch({
+          type: 'GET_ACTIVISTS',
+
+          payload: [response.data, ...activists],
+        });
       }
     } catch (err) {
       console.log(err);
@@ -44,8 +49,8 @@ const useActivists = () => {
       try {
         const response = await axios.get(`${ACTIVISTS_URL}?_limit=10`);
         if (response.data) {
-                 setActivists(response.data);
-                 console.log(response.data)
+          // setActivists(response.data);
+          dispatch({ type: 'GET_ACTIVISTS', payload: response.data });
         }
       } catch (err) {
         console.log(err);
@@ -53,6 +58,9 @@ const useActivists = () => {
     }
     getActivists();
   }, []);
+  const increaseClap = () => {
+    setClap(clap + 1);
+  };
   return {
     activists,
     onChange,
@@ -61,6 +69,8 @@ const useActivists = () => {
     handleShow,
     handleClose,
     show,
+    clap,
+    increaseClap,
   };
 };
 export default useActivists;

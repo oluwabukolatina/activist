@@ -1,8 +1,10 @@
 import PropTypes from 'prop-types';
 
-import React from 'react';
+import React, { useContext } from 'react';
+import AppContext from '../../context/AppContext';
 
-const ListView = ({ activists }) => {
+const ListView = () => {
+  const { activists } = useContext(AppContext);
   console.log(activists);
   const displayTableData =
     activists && activists.length
@@ -12,7 +14,11 @@ const ListView = ({ activists }) => {
               <td className="list-activist">
                 <img
                   className="list-activist-image"
-                  src={activist.imgUrl}
+                  src={
+                    activist.imgUrl
+                      ? activist.imgUrl
+                      : 'https://via.placeholder.com/150'
+                  }
                   alt="activist"
                 />
               </td>
