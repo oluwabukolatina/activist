@@ -5,7 +5,8 @@ import PropTypes from 'prop-types';
 import Clap from '../../images/clap-hand.png';
 
 const TileView = ({ activists }) => {
-  
+  console.log(activists);
+
   const displayActivists =
     activists && activists.length
       ? activists.map((activist) => {

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 const ListView = ({ activists }) => {
+  console.log(activists);
   const displayTableData =
     activists && activists.length
       ? activists.map((activist) => {
