@@ -1,12 +1,20 @@
 /* eslint-disable react/require-default-props */
-import React from 'react';
+import React, { useContext } from 'react';
 import moment from 'moment';
 import PropTypes from 'prop-types';
 import Clap from '../../images/clap-hand.png';
+import AppContext from '../../context/AppContext';
 
-const TileView = ({ activists }) => {
-  console.log(activists);
-
+const TileView = () => {
+  const {
+    activists,
+    onChange,
+    newActivist,
+    createActivist,
+    handleShow,
+    handleClose,
+    show,
+  } = useContext(AppContext);
   const displayActivists =
     activists && activists.length
       ? activists.map((activist) => {

@@ -1,8 +1,18 @@
 import PropTypes from 'prop-types';
 
-import React from 'react';
+import React, { useContext } from 'react';
+import AppContext from '../../context/AppContext';
 
-const ListView = ({ activists }) => {
+const ListView = () => {
+  const {
+    activists,
+    onChange,
+    newActivist,
+    createActivist,
+    handleShow,
+    handleClose,
+    show,
+  } = useContext(AppContext);
   console.log(activists);
   const displayTableData =
     activists && activists.length
