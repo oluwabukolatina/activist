@@ -3,7 +3,6 @@
 /* eslint-disable react/button-has-type */
 import React from 'react';
 import Header from '../layouts/Header';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import useActivists from '../../hooks/useActivists';
 import { AppProvider } from '../../context/AppContext';
 import ActivistsBody from './ActivistsBody';
