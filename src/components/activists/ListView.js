@@ -6,12 +6,6 @@ import AppContext from '../../context/AppContext';
 const ListView = () => {
   const {
     activists,
-    onChange,
-    newActivist,
-    createActivist,
-    handleShow,
-    handleClose,
-    show,
   } = useContext(AppContext);
   console.log(activists);
   const displayTableData =

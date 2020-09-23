@@ -6,20 +6,12 @@ import Clap from '../../images/clap-hand.png';
 import AppContext from '../../context/AppContext';
 
 const TileView = () => {
-  const {
-    activists,
-    onChange,
-    newActivist,
-    createActivist,
-    handleShow,
-    handleClose,
-    show,
-  } = useContext(AppContext);
+  const { activists } = useContext(AppContext);
   const displayActivists =
     activists && activists.length
       ? activists.map((activist) => {
           return (
-            <div className="activist">
+            <div key={activist.id} className="activist">
               <div className="image-clap py-3">
                 <img
                   className="activist-image"
