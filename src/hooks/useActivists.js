@@ -9,7 +9,8 @@ const useActivists = () => {
       try {
         const response = await axios.get(`${GET_ACTIVISTS_URL}`);
         if (response.data) {
-          setActivists(response.data);
+                 setActivists(response.data);
+                 console.log(response.data)
         }
       } catch (err) {
         console.log(err);
