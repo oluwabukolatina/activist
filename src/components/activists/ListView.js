@@ -1,6 +1,29 @@
+import PropTypes from 'prop-types';
+
 import React from 'react';
 
-const ListView = () => {
+const ListView = ({ activists }) => {
+  console.log(activists);
+  const displayTableData =
+    activists && activists.length
+      ? activists.map((activist) => {
+          return (
+            <tr key={activist.id}>
+              <td className="list-activist">
+                <img
+                  className="list-activist-image"
+                  src={activist.imgUrl}
+                  alt="activist"
+                />
+              </td>
+              <td className="list-activist-name">{activist.person}</td>
+              <td className="list-activist-description">
+                {activist.description}
+              </td>
+            </tr>
+          );
+        })
+      : 'no data';
   return (
     <table className="shadow">
       <tr>
@@ -9,33 +32,11 @@ const ListView = () => {
         <th>Description</th>
       </tr>
 
-      <tr>
-        <td className="list-activist">
-          <img
-            className="list-activist-image"
-            src="https://via.placeholder.com/150"
-            alt="activist"
-          />
-        </td>
-        <td className="list-activist-name">Giovanni Rovelli</td>
-        <td className="list-activist-description">
-          American Community Leader and activist
-        </td>
-      </tr>
-      <tr>
-        <td className="list-activist">
-          <img
-            className="list-activist-image"
-            src="https://via.placeholder.com/150"
-            alt="activist"
-          />
-        </td>
-        <td className="list-activist-name">Giovanni Rovelli</td>
-        <td className="list-activist-description">
-          American Community Leader and activist
-        </td>
-      </tr>
+      {displayTableData}
     </table>
   );
+};
+ListView.propTypes = {
+  activists: PropTypes.shape(),
 };
 export default ListView;
