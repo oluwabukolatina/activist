@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable react/button-has-type */
 import React, { useState, Fragment } from 'react';
 import Modal from 'react-bootstrap/Modal';
@@ -47,7 +48,7 @@ const Activists = () => {
       <div onClick={() => display()} className="filter">
         <img src={List} alt="list" />
       </div>
-      <ListView />
+      <ListView activists={activists} />
     </>
   );
   return (
