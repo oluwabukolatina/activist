@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/activist/static/css/main.7e1814a4.chunk.css",
+    "main.js": "/activist/static/js/main.149a923f.chunk.js",
+    "main.js.map": "/activist/static/js/main.149a923f.chunk.js.map",
+    "runtime-main.js": "/activist/static/js/runtime-main.0d23377d.js",
+    "runtime-main.js.map": "/activist/static/js/runtime-main.0d23377d.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/activist/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.75de30c1.chunk.js": "/activist/static/js/2.75de30c1.chunk.js",
+    "static/js/2.75de30c1.chunk.js.map": "/activist/static/js/2.75de30c1.chunk.js.map",
+    "index.html": "/activist/index.html",
+    "precache-manifest.d6f5211d464b55465e6140aeabf60380.js": "/activist/precache-manifest.d6f5211d464b55465e6140aeabf60380.js",
+    "service-worker.js": "/activist/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/activist/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.7e1814a4.chunk.css.map": "/activist/static/css/main.7e1814a4.chunk.css.map",
+    "static/js/2.75de30c1.chunk.js.LICENSE.txt": "/activist/static/js/2.75de30c1.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/activist/static/media/teemu-paananen-rd5uNIUJCF0-unsplash 1.79e8c4a1.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0d23377d.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.75de30c1.chunk.js",
+    "static/css/main.7e1814a4.chunk.css",
+    "static/js/main.149a923f.chunk.js"
+  ]
+}
