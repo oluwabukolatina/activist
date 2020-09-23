@@ -24,14 +24,21 @@
 }
 
 .cta button {
-  width: 27%;
+  width: 30%;
   background: #6a0000;
   border-radius: 2px;
+  margin-top: 5%;
   color: #fff;
   border: #6a0000;
   padding: 3%;
   font-weight: bolder;
   cursor: pointer;
+}
+
+.cta button a,
+.cta button a:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 .cta p {
@@ -41,12 +48,20 @@
 .logo-name {
   font-style: normal;
   color: #6a0000;
-  margin-left: 5rem;
-  margin-top: 1.8rem;
-  font-size: 35px;
+  /* margin-left: 5rem; */
+  /* margin-top: 1.5rem; */
+  padding-left: 5rem;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-size: 30px;
   font-weight: bolder;
   background: #ffffff;
-  border-bottom: 1px solid;
+}
+
+.logo-name a,
+.logo-name a:hover {
+  color: inherit;
+  text-decoration: none;
 }
 
 .activists-container {
@@ -54,6 +69,10 @@
   margin-left: 5rem;
   margin-top: 3rem;
   margin-right: 5rem;
+}
+
+input[type='text'].search::-webkit-input-placeholder {
+  font-size: 13px;
 }
 
 .search-add {
@@ -66,6 +85,9 @@
   height: 3rem;
   width: 50%;
   margin-right: 2rem;
+
+  padding-left: 35px;
+  border: 1px solid;
 }
 
 .search-add button {
@@ -73,12 +95,20 @@
 }
 
 .activist-search {
-  background: #6a0000;
-  border-radius: 2px;
-  border: #6a0000;
+  width: 100%;
+  height: auto !important;
+  background: #6a0000 !important;
+  border: #6a0000 !important;
+  border-radius: 1px !important;
   color: #fff;
-  font-weight: bolder;
-  padding: 1rem 1.5rem 2rem;
+  font-weight: bold;
+  font-size: 14px;
+  padding-top: 11px !important;
+  padding-bottom: 11px !important;
+}
+
+.activist-search:focus {
+  box-shadow: 0 0 0 0.2rem rgb(106 9 0) !important;
 }
 
 .add {
@@ -97,23 +127,67 @@
   margin-bottom: 3rem;
 }
 
+/* .activists {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2%;
+} */
+
+/* .activist {
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 3rem 2rem;
+  background: #fff;
+} */
 .activists {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2%;
 }
 
+.image-modal {
+  width: 13%;
+  border-radius: 50%;
+}
+
+.add-photo {
+  color: #6a0000;
+  font-weight: bold;
+  padding-top: 50px;
+  margin-left: 10px;
+  text-decoration: underline;
+}
+
 .activist {
-  border: 1px solid;
+  border: 1px solid whitesmoke;
   border-radius: 3px;
-  padding: 3rem 2rem;
+  padding: 1rem 2rem;
   background: #fff;
+  margin-bottom: 7%;
+  height: 393px;
+}
+
+.activist h5 {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 8%;
+}
+.activist h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.activist p {
+  font-size: 14px;
+  text-align: justify;
+  font-weight: 700;
 }
 
 .image-clap {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-gap: 3rem;
+  margin-bottom: 2rem;
 }
 
 .clap-count {
@@ -122,14 +196,24 @@
   margin: auto auto auto 2rem;
 }
 
+.clap-count span {
+  margin-top: 12px;
+  font-size: 14px;
+  margin-left: 10px;
+  font-weight: bold;
+  color: #cccccc;
+}
+
 .activist-image {
   border-radius: 50%;
-  width: 88%;
+  width: 100%;
 }
 
 table {
   border-collapse: collapse;
   width: 100%;
+  background-color: white !important;
+  z-index: 1000;
 }
 
 td {
@@ -150,6 +234,7 @@ th {
   padding-top: 1rem;
   padding-bottom: 1rem;
   color: #a1a4b8;
+  font-size: 13px;
 }
 
 td:nth-child(odd) {
@@ -159,18 +244,21 @@ td:nth-child(odd) {
 .list-activist-image {
   border-radius: 50%;
   width: 58%;
+  margin-bottom: 5px;
 }
 
 .list-activist-name {
   width: 50%;
-  padding-left: 1rem;
-
+  padding-left: 0rem;
+  font-size: 14px;
   line-height: 22px;
   color: #121212;
+  font-weight: 700;
 }
 
 .list-activist-description {
-  padding-left: 1rem;
+  padding-left: 0rem;
+  font-weight: 700;
 }
 
 .link {
@@ -189,10 +277,16 @@ td:nth-child(odd) {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
 .footer {
-  margin: auto;
-  margin-bottom: 2rem;
+  /* margin: auto;
+  margin-bottom: 2rem; */
+
+  text-align: center;
+  background-color: #fbfbfb;
+  justify-content: center !important;
 }
+
 .add-title {
   font-style: normal;
   font-weight: 800;

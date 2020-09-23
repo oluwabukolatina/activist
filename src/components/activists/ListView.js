@@ -7,7 +7,7 @@ const ListView = () => {
       <div className="filter">
         <img src={List} alt="list" />
       </div>
-      <table>
+      <table className="shadow">
         <tr>
           <th />
           <th>Name</th>
